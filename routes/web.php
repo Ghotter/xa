@@ -14,13 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-})->name(`site.home`);
-Route::get('/editar', function () {
-    return view('welcome');
-})->name(`site.editar`);
-Route::get('/apagar', function () {
-    return view('welcome');
-})->name(`site.apagar`);
+    return view('site/home');
+})->name('site.home');
 
+Route::get('/cadastrar', function () {
+    return view('site/cadastrar');
+})->name('site.cadastrar');
 

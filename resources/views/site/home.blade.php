@@ -6,24 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="{{url('css/style.css')}}">
 </head>
-<body class="d-flex h-100 text-center text-white bg-dark">
+<body>
     
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
       <header class="mb-auto">
         <div>
-          <h3 class="float-md-start mb-0">livros</h3>
+          <h3 class="float-md-start mb-0 text-warning">livros</h3>
           <nav class="nav nav-masthead justify-content-center float-md-end">
-            <a class="nav-link" href="#">procurar</a>
-            <a class="nav-link" href="#">deletar</a>
+            <a class="nav-link text-warning" href="{{url('cadastro.blade.php')}}">cadastrar</a>
           </nav>
         </div>
       </header>
       <div class="position-absolute top-50 start-50 translate-middle">
       <main class="p">
-        <h1>livros antigos e baratos</h1>
-        <p class="lead">assine nosso plano de livros</p>
+        <h1 class="text-warning">livros antigos e baratos</h1>
+        <p class="text-warning">assine nosso plano de livros</p>
       </main>
       </div>
     </div>
@@ -32,9 +31,9 @@
   <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">livros</th>
+      <th scope="col">autor</th>
+      <th scope="col">data de lançamento</th>
     </tr>
   </thead>
   <tbody>
