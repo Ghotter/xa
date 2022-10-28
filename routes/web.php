@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\CadastrarController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,11 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('site/home');
-})->name('site.home');
-
-Route::get('/cadastrar', function () {
-    return view('site/cadastrar');
-})->name('site.cadastrar');
-
+Route::get('/',[HomeController::class,'MostrarHome'])->name('home');
+Route::get('/cadastro',[CadastrarController::class,'MostrarCadastro'])->name('mostrar-cadastro');

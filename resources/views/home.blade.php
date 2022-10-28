@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,7 @@
         <div>
           <h3 class="float-md-start mb-0 text-warning">livros</h3>
           <nav class="nav nav-masthead justify-content-center float-md-end">
-            <a class="nav-link text-warning" href="{{url('cadastro.blade.php')}}">cadastrar</a>
+            <a class="nav-link text-warning" href="{{route('mostrar-cadastro')}}">cadastrar</a>
           </nav>
         </div>
       </header>
