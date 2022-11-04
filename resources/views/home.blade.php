@@ -15,7 +15,7 @@
         <div>
           <h3 class="float-md-start mb-0 text-warning">livros</h3>
           <nav class="nav nav-masthead justify-content-center float-md-end">
-            <a class="nav-link text-warning" href="{{route('mostrar-cadastro')}}">cadastrar</a>
+            <a class="nav-link text-warning" href="{{route('cadastrar')}}">cadastrar</a>
           </nav>
         </div>
       </header>
@@ -26,6 +26,7 @@
       </main>
       </div>
     </div>
+    
     <div class="position-absolute top-100 start-50 translate-middle">
     <table class="table table-dark table-striped">
   <thead>
@@ -37,25 +38,17 @@
     </tr>
   </thead>
   <tbody>
+  @foreach($registrosL as $registrosLs)
     <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <th scope="row">{{$registrosLs->id}}</th>
+      <td>{{$registrosLs->nomeLivro}}</td>
+      <td>{{$registrosLs->autorLivro}}</td>
+      <td>{{$registrosLs->dataLancamentoLivro}}</td>
     </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
+  @endforeach
   </tbody>
 </table>
+
 </div>
     
 

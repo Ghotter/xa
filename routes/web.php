@@ -15,4 +15,6 @@ use App\Http\Controllers\CadastrarController;
 */
 
 Route::get('/',[HomeController::class,'MostrarHome'])->name('home');
-Route::get('/cadastro',[CadastrarController::class,'MostrarCadastro'])->name('mostrar-cadastro');
+Route::get('/cadastrar',[CadastrarController::class,'MostrarCadastro'])->name('mostrar-cadastro');
+Route::post('/cadastrar',[CadastrarController::class,'cadastrar'])->name('cadastrar');
+Route::get('/home',[HomeController::class,'MostrarLivros'])->name('MostrarLivros');
