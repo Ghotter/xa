@@ -7,9 +7,7 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function MostrarHome(){
-        return view('home');
-    }
+
 
     public function MostrarLivros(Request $request){
 

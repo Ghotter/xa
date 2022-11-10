@@ -24,7 +24,7 @@ class CadastrarController extends Controller
             'dataLancamentoLivro'=>'string|required'
         ]);
         Livros::create($dadosL);
-        return Redirect::route('mostrar-cadastro');
+        return Redirect::route('home');
 
     }
     
